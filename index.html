@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kantor Exchange</title>
+    <link
+      rel="stylesheet"
+      href="./css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="background-layout"></div>
+    <header>
+      <img class="logo" src="./images/logo.png" alt="logo" />
+    </header>
+    <div class="container">
+      <div class="currency">
+        <input type="text" class="currency" id="eur" />
+        <img src="./images/eur.jpg" class="currency-icon" alt="EUR" />
+      </div>
+      <div class="currency">
+        <input type="text" class="currency" id="usd" />
+        <img src="./images/usd.jpg" class="currency-icon" alt="USD" />
+      </div>
+      <div class="currency">
+        <input type="text" class="currency" id="gbp" />
+        <img src="./images/gbp.jpg" class="currency-icon" alt="GBP" />
+      </div>
+      <div class="currency">
+        <input type="text" class="currency" id="chf" />
+        <img src="./images/chf.jpg" class="currency-icon" alt="CHF" />
+      </div>
+      <div class="bottom">
+        <input
+          type="button"
+          class="convert-button"
+          value="convert"
+          onclick="convert()"
+        />
+        <div class="result">
+          <span class="label">You will get</span>
+          <span class="value" id="r-value">N/A</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
